@@ -1,1 +1,56 @@
-Hello World
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Comp6080 Ass1-task4</title>
+    <style>
+        form {
+            margin: 0;
+        }
+
+        input[type="button"] {
+            margin: 20px 0;
+        }
+    </style>
+  </head>
+  <body>
+    <form name="infoForm">
+      <table border="1">
+        <tr>
+          <td>First name</td>
+          <td><input type="text" name="firstname" /></td>
+        </tr>
+        <tr>
+          <td>Last name</td>
+          <td><input type="text" name="lastname" /></td>
+        </tr>
+        <tr>
+          <td>Date of birth</td>
+          <td><input type="text" name="dateofbirth" /></td>
+        </tr>
+        <tr>
+          <td>Favourite animal</td>
+          <td>
+            <select name="animal">
+              <option value="dog">Dog</option>
+              <option value="puppy">Puppy</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Citites lived in</td>
+          <td>
+            <input type="checkbox" name="Sydney" />Sydney<br />
+            <input type="checkbox" name="Melbourne" />Melbourne<br />
+            <input type="checkbox" name="Adelaide" />Adelaide<br />
+          </td>
+        </tr>
+      </table>
+      <input type="reset" name="removeButton" value="Remove" /><br />
+      <textarea name="output" cols="50" rows="10"></textarea>
+    </form>
+    <script src="dynamic_form.js"></script>
+  </body>
+</html>
