@@ -24,6 +24,28 @@ body {
 	line-height: 1;
 }
 
-ol, ul {
-	list-style: none;
+header {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(92, 200, 236);
+    position: fixed;
+}
+
+main {
+    padding-top: 100px;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+.sidebar {
+    padding-top: 100px;
+    height: 100%;
+    width: 200px;
+}
+
+.main-content {
+    display: flex;
 }
