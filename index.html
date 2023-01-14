@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no" />
     <title>Fayechael's cafe</title>
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
   </head>
   <body>
     <!-- header -->
@@ -19,7 +24,15 @@
     
     <!-- main content -->
     <main>
-        <div class="sidebar" id="left-menu">
+        <div class="sidebar-sm" id="left-menu">
+            <ul class="sidebar-list">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+        <div class="sidebar-l hidden" id="left-menu">
             <ul class="sidebar-list">
                 <li>Home</li>
                 <li>This site's Design</li>
@@ -28,15 +41,49 @@
                 <li>Others</li>
             </ul>
         </div>
-        <div class="page-content" id="main1">
+
+        <!-- Page 1 -->
+        <div class="page-container page-htmlandcss" id="page1">
+            <div class="page-article" id="article1">
+                <article>
+                    <h1>page 1: 页面布局笔记</h1>
+                    <p>
+                        This is page 1
+                    </p>
+                    <br>
+                    <p>
+                        2023/1/14: 完成了header导航样式; 
+                        使用z-index + box-shadow; 
+                        logo和ul的样式微调。
+                    </p>
+                    <br>
+                    <p>
+                        2023/1/14: 调整了footer样式 5px-padding + 30px-&lt;p>; 
+                        此处涉及xmp,pre,和左括号符号码使用；
+                        增加了左侧边栏sm和l型号的区别;
+                        增加了新的页面（备用）。
+                    </p>
+                    <br>
+                </article>
+                
+            </div>
+            <div class="page-article" id="article2">
+                <p style="text-align: center;">
+                    ________________________END________________________
+                </p>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page-container page-none hidden" id="page2">
             <div class="content-item" id="no-content">
                 <p>
-                    Leetcode node: Question 1
+                    This is page 2
                 </p>
             </div>
             <div class="content-item" id="no-content">
-                <p>
-                    No new content yet...
+                <p style="text-align: center;">
+                    ________________________END________________________
                 </p>
             </div>
         </div>
@@ -44,7 +91,9 @@
     
     <!-- footer -->
     <footer>
-      <p>copyright@fayechael.com</p>
+        <p style="text-align: center;">
+            ________________________END________________________
+        </p>
     </footer>
 
     <!-- script -->
